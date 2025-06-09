@@ -20,13 +20,13 @@ socket.on('clients-total', (data) => {
 })
 
 function sendMessage(){
-    if (messageInput.value === '')
-    return 
-    console.log(messageInput.value)
+    if (messageInput.value === ''){
+        return 
+    }
     //send data json object to the server
     const data = {
         name: nameInput.value,
-        mesaage: messageInput.value,
+        message: messageInput.value,
         dateTime: new Date()
     }
 
